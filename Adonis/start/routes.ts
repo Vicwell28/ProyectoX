@@ -27,3 +27,8 @@ Route.get('/', async () => {
 Route.group(() => {
   Route.resource('Led', 'LedsController').apiOnly()
 }).prefix('/api/v1')
+
+
+Route.group(() => {
+  Route.resource('motor', 'MotorsController').apiOnly()
+}).prefix('/api/v1')
